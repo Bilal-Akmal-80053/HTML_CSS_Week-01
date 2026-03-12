@@ -1,0 +1,235 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 0px;
+  position: fixed;
+  width: 100%;
+}
+
+.logo-Navbar {
+  margin-left: 10px;
+  width: 50px;
+}
+.cart-heart-logo-navbar {
+  margin-right: 10px;
+  display: flex;
+  gap: 20px;
+  
+}
+.cart-heart-logo-navbar img{
+
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.7s ease-in-out;
+}
+.cart-heart-logo-navbar img:hover{
+  border-bottom: 2px solid black;
+}
+.cart-heart-logo-navbar img {
+  width: 30px;
+}
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+ul li {
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.7s ease-in-out;
+}
+
+ul li:hover {
+  border-bottom: 2px solid black;
+}
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+/* // hero css here  */
+.hero{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("https://www.insidehook.com/wp-content/uploads/2026/01/Nike-ACG-Hero.jpg?fit=1200%2C800");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h2{
+  font-size: 3rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.hero p{
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+.hero b{
+  font-weight: 900;
+  color: #61d566;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.hero button{
+  border-radius: 10px;
+  padding: 12px 28px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+.hero button:hover{
+  background: white;
+  color: black;
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border: 1px solid white;
+   background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+              url("https://cdn.runrepeat.com/storage/gallery/buying_guide_primary/1467/hero-best-nike-hiking-shoes-hero-image-21449329-960.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 30px;
+}
+
+.feature {
+  flex: 1;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.feature h3 {
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #555;
+}
+.feature img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* contact form css here  */
+.contact {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f5f5;
+}
+
+/* Heading */
+.contact h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Labels */
+label {
+  font-weight: 500;
+}
+
+/* Inputs */
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Textarea size */
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Button */
+button {
+  border-radius: 10px;
+  padding: 12px 28px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+/* Button hover */
+button:hover {
+  background: rgb(214, 214, 214);
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  background: rgb(227, 227, 227);
+}
+/* media query hrer  */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+  form {
+    max-width: 300px;
+  }
+}
+/* media qquery for the responives of the navbar  */
+@media (max-width: 768px) {
+  ul {
+    display: none; /* hides the navbr her  */
+  }
+}
